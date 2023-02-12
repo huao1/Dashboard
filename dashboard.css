@@ -1,0 +1,20 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    grid-column: 1 / 2;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / 3;
+}
+
+.dashboard {
+    background-color: gray;
+}
