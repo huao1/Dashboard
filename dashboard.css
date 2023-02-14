@@ -54,7 +54,56 @@ body {
 
 .header {
     background-color: white;
+    padding: 1rem 4rem;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.upper-header {
+    display: flex;
+    gap: 150px;
+}
+
+.upper-header > * {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search > input {
+    background-color: #d6e5f0;
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.search {
+    flex-grow: 1;
+}
+
+.bell-profile {
+    gap: 30px;
+}
+
+.search-bar {
+    flex: 1;
+}
+
+.magnify, .bell {
+    height: 30px;
+    width: auto;
+}
+
+.magnify:active, .bell:active {
+    background-color: #DCDCDC;
+    border-radius: 50%;
+}
+
+.profile {
+    height: 50px;
+    width: auto;
 }
 
 .dashboard {
